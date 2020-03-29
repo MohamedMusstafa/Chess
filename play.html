@@ -23,16 +23,39 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+       
+      }
+
+      .blackQueen {
+          width: 109px;
+          height: 58px;
+          position: absolute;
+          bottom: 1px;
+          left: 511px;
+      }
+
+      .blackQueen img {
+
+          height: 100%;
+          width: 100%;
+
       }
 
       .board-container {
           height: 100%;
           width: 100%;
+          position: relative;
+          left: 0;
+          top: 0;
       }
 
-     .chess-board {
-        /*height: 500px;*/
-        /*width: 100%;*/
+      .board-container img {
+          width: 50%;
+          height: 100%;
+          cursor: pointer;
+          position: relative;
+          top: 0;
+          left: 0;
       }
 
       .starter-template {
@@ -82,10 +105,13 @@
 
     <main role="main" class="container">
           <div class="starter-template">
-            <h1>Chess!</h1>
+            <h1>Our First Game ( Chess! )</h1>
             <p class="lead">Chess is now played all over the world, but its origins supposedly began in India way back in the 6th century.</p>
             <div class="board-container">
                 <img src="images/brown.png">
+                <div class="blackQueen">
+                    <img src="images/BQ.svg">
+                </div>
             </div>
           </div>
 
