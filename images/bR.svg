@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" height="87" width="87" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<path fill="currentColor" d="m49.26 14.918h7.1213v-5.7389h11.478v15.709l-9.2995 7.1631v20.023l7.1213 7.1213v8.5874h6.4091v10.012h-57.179v-10.012h6.4091v-8.5874l7.1631-7.1213v-20.023l-9.2995-7.1631v-15.709h11.436v5.7389h7.1632v-5.7389h11.478v5.7389z"/>
+<g fill="#fff">
+<path d="m24.252 67.113v4.2728h38.539v-4.2728h-38.539z"/>
+<path d="m43.521 21.369h-21.448v1.9269l3.0579 2.3039h36.821l2.9742-2.3039v-1.9269h-21.406z"/>
+<path d="m43.521 28.449h-14.661l2.5134 1.9688v2.3877h24.296v-2.3877l2.5134-1.9688h-14.661z"/>
+<path d="m43.521 51.321h-12.148v1.9269l-2.5134 2.4296h29.323l-2.5134-2.4296v-1.9269h-12.148z"/>
+<path d="m43.521 58.526h-17.342l-1.9269 1.8013v2.4296h38.539v-2.4296l-1.9269-1.8013h-17.342z"/>
+</g>
+</svg>
