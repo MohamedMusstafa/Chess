@@ -14,11 +14,9 @@ body {
 }
 
 .blackQueen {
-    width: 109px;
-    height: 58px;
+    width: 120px;
+    height: 62px;
     position: absolute;
-    bottom: 1px;
-    left: 511px;
 }
 
 .blackQueen img {
