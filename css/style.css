@@ -43,10 +43,57 @@ body {
     left: 0;
 }
 
+
+.Coordinates-numbers {
+    position: absolute;
+    display: flex;
+    pointer-events: none;
+    /* opacity: 0.8; */
+    font-size: 13px;
+    right: 241px;
+    top: 0;
+    flex-flow: column;
+    height: 99%;
+    width: 12px;
+}
+
+.Coordinates-numbers span {
+    transform: translateY(39%);
+    flex: 1 1 auto;
+    flex-flow: column-reverse;
+}
+
+.Coordinates-vowels {
+    bottom: -23px;
+    left: 266px;
+    flex-flow: row;
+    width: 50%;
+    height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    pointer-events: none;
+    font-size: 13px;
+    flex-flow: row-reverse;
+}
+
+.Coordinates-vowels span {
+    bottom: -16px;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
 .starter-template {
     padding: 3rem 1.5rem;
     text-align: center;
 }
+
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;

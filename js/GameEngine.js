@@ -9,4 +9,14 @@ $(document).ready(function(){
 
 	$('.blackQueen').css('transform','translate(503px, -63px)');
 
+	// $items = {
+	// 	"board":[
+	// 	    {"firstName":"John", "lastName":"Doe"},
+	// 	    {"firstName":"Anna", "lastName":"Smith"},
+	// 	    {"firstName":"Peter", "lastName":"Jones"}
+	// 	]
+	// };
+
+	// console.log($items);
+
 });
