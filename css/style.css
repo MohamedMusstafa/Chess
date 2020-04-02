@@ -13,17 +13,11 @@ body {
   user-select: none;
 }
 
-.blackQueen {
+.pieces div {
     width: 120px;
     height: 62px;
     position: absolute;
-}
-
-.blackQueen img {
-
-    height: 100%;
-    width: 100%;
-
+    cursor: pointer;
 }
 
 .board-container {
@@ -37,7 +31,7 @@ body {
 .board-container img {
     width: 50%;
     height: 100%;
-    cursor: pointer;
+ 
     position: relative;
     top: 0;
     left: 0;
