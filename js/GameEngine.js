@@ -190,6 +190,102 @@ $(document).ready(function(){
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bP.svg',
 			'ClassName' : 'PawnBlack8'
+		},
+		'WhiteQueen' : {
+			'Coords' 	:  getPieceCoord('D', 1),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wQ.svg',
+			'ClassName' : 'WhiteQueen'
+		},
+		'WhiteKing' : {
+			'Coords' 	:  getPieceCoord('E', 1),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wK.svg',
+			'ClassName' : 'WhiteKing'
+		},
+		'RightWhiteRook' : {
+			'Coords' 	:  getPieceCoord('A', 1),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wR.svg',
+			'ClassName' : 'WhiteRook'
+		},
+		'LeftWhiteRook' : {
+			'Coords' 	:  getPieceCoord('H', 1),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wR.svg',
+			'ClassName' : 'LeftWhiteRook'
+		},
+		'RightWhiteNight' : {
+			'Coords' 	:  getPieceCoord('B', 1),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wN.svg',
+			'ClassName' : 'RightWhiteNight'
+		},
+		'LeftWhiteKnight' : {
+			'Coords' 	:  getPieceCoord('G', 1),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wN.svg',
+			'ClassName' : 'LeftWhiteKnight'
+		},
+		'RightWhiteBiShop' : {
+			'Coords' 	:  getPieceCoord('F', 1),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wB.svg',
+			'ClassName' : 'RightWhiteBiShop'
+		},
+		'LeftWhiteBiShop' : {
+			'Coords' 	:  getPieceCoord('C', 1),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wB.svg',
+			'ClassName' : 'LeftWhiteBiShop'
+		},
+		'PawnWhite1' : {
+			'Coords' 	:  getPieceCoord('A', 2),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wP.svg',
+			'ClassName' : 'PawnWhite1'
+		},
+		'PawnWhite2' : {
+			'Coords' 	:  getPieceCoord('B', 2),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wP.svg',
+			'ClassName' : 'PawnWhite2'
+		},
+		'PawnWhite3' : {
+			'Coords' 	:  getPieceCoord('C', 2),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wP.svg',
+			'ClassName' : 'PawnWhite3'
+		},
+		'PawnWhite4' : {
+			'Coords' 	:  getPieceCoord('E', 2),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wP.svg',
+			'ClassName' : 'PawnWhite4'
+		},
+		'PawnWhite5' : {
+			'Coords' 	:  getPieceCoord('D', 2),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wP.svg',
+			'ClassName' : 'PawnWhite5'
+		},
+		'PawnWhite6' : {
+			'Coords' 	:  getPieceCoord('F', 2),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wP.svg',
+			'ClassName' : 'PawnWhite6'
+		},
+		'PawnWhite7' : {
+			'Coords' 	:  getPieceCoord('G', 2),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wP.svg',
+			'ClassName' : 'PawnWhite7'
+		},
+		'PawnWhite8' : {
+			'Coords' 	:  getPieceCoord('H', 2),
+			'Color'  	: 'White',
+			'image'	 	: 'images/wP.svg',
+			'ClassName' : 'PawnWhite8'
 		}
 	};
 
