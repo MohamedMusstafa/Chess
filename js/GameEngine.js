@@ -304,6 +304,11 @@ $(document).ready(function(){
 
 	setChessPieceDefaultPosition();
 
+
+	$(document).on('click', '.pieces div', function(){
+		coordByPx =  
+	});
+
 	// console.log(ChessPieces);
 
 });
