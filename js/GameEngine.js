@@ -99,200 +99,232 @@ $(document).ready(function(){
 			'Coords' 	:  getPieceCoord('D', 8),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bQ.svg',
-			'ClassName' : 'blackQueen'
+			'ClassName' : 'blackQueen',
+			'PiecePosition' : ['D', 8]
 		},
 		'BlackKing' : {
 			'Coords' 	:  getPieceCoord('E', 8),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bK.svg',
-			'ClassName' : 'blackKing'
+			'ClassName' : 'blackKing',
+			'PiecePosition' : ['E', 8]
 		},
 		'RightBlackRook' : {
 			'Coords' 	:  getPieceCoord('A', 8),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bR.svg',
-			'ClassName' : 'BlackRook'
+			'ClassName' : 'BlackRook',
+			'PiecePosition' : ['A', 8]
 		},
 		'LeftBlackRook' : {
 			'Coords' 	:  getPieceCoord('H', 8),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bR.svg',
-			'ClassName' : 'LeftBlackRook'
+			'ClassName' : 'LeftBlackRook',
+			'PiecePosition' : ['H', 8]
 		},
 		'RightBlackNight' : {
 			'Coords' 	:  getPieceCoord('B', 8),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bN.svg',
-			'ClassName' : 'RightBlackNight'
+			'ClassName' : 'RightBlackNight',
+			'PiecePosition' : ['B', 8]
 		},
 		'LeftBlackKnight' : {
 			'Coords' 	:  getPieceCoord('G', 8),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bN.svg',
-			'ClassName' : 'LeftBlackKnight'
+			'ClassName' : 'LeftBlackKnight',
+			'PiecePosition' : ['G', 8]
 		},
 		'RightBlackBiShop' : {
 			'Coords' 	:  getPieceCoord('F', 8),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bB.svg',
-			'ClassName' : 'RightBlackBiShop'
+			'ClassName' : 'RightBlackBiShop',
+			'PiecePosition' : ['F', 8]
 		},
 		'LeftBlackBiShop' : {
 			'Coords' 	:  getPieceCoord('C', 8),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bB.svg',
-			'ClassName' : 'LeftBlackBiShop'
+			'ClassName' : 'LeftBlackBiShop',
+			'PiecePosition' : ['C', 8]
 		},
 		'PawnBlack1' : {
 			'Coords' 	:  getPieceCoord('A', 7),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bP.svg',
-			'ClassName' : 'PawnBlack1'
+			'ClassName' : 'PawnBlack1',
+			'PiecePosition' : ['A', 7]
 		},
 		'PawnBlack2' : {
 			'Coords' 	:  getPieceCoord('B', 7),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bP.svg',
-			'ClassName' : 'PawnBlack2'
+			'ClassName' : 'PawnBlack2',
+			'PiecePosition' : ['B', 7]
 		},
 		'PawnBlack3' : {
 			'Coords' 	:  getPieceCoord('C', 7),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bP.svg',
-			'ClassName' : 'PawnBlack3'
+			'ClassName' : 'PawnBlack3',
+			'PiecePosition' : ['C', 7]
 		},
 		'PawnBlack4' : {
 			'Coords' 	:  getPieceCoord('E', 7),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bP.svg',
-			'ClassName' : 'PawnBlack4'
+			'ClassName' : 'PawnBlack4',
+			'PiecePosition' : ['E', 7]
 		},
 		'PawnBlack5' : {
 			'Coords' 	:  getPieceCoord('D', 7),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bP.svg',
-			'ClassName' : 'PawnBlack5'
+			'ClassName' : 'PawnBlack5',
+			'PiecePosition' : ['D', 7]
 		},
 		'PawnBlack6' : {
 			'Coords' 	:  getPieceCoord('F', 7),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bP.svg',
-			'ClassName' : 'PawnBlack6'
+			'ClassName' : 'PawnBlack6',
+			'PiecePosition' : ['F', 7]
 		},
 		'PawnBlack7' : {
 			'Coords' 	:  getPieceCoord('G', 7),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bP.svg',
-			'ClassName' : 'PawnBlack7'
+			'ClassName' : 'PawnBlack7',
+			'PiecePosition' : ['G', 7]
 		},
 		'PawnBlack8' : {
 			'Coords' 	:  getPieceCoord('H', 7),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bP.svg',
-			'ClassName' : 'PawnBlack8'
+			'ClassName' : 'PawnBlack8',
+			'PiecePosition' : ['H', 7]
 		},
 		'WhiteQueen' : {
 			'Coords' 	:  getPieceCoord('D', 1),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wQ.svg',
-			'ClassName' : 'WhiteQueen'
+			'ClassName' : 'WhiteQueen',
+			'PiecePosition' : ['D', 1]
 		},
 		'WhiteKing' : {
 			'Coords' 	:  getPieceCoord('E', 1),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wK.svg',
-			'ClassName' : 'WhiteKing'
+			'ClassName' : 'WhiteKing',
+			'PiecePosition' : ['E', 1]
 		},
 		'RightWhiteRook' : {
 			'Coords' 	:  getPieceCoord('A', 1),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wR.svg',
-			'ClassName' : 'WhiteRook'
+			'ClassName' : 'WhiteRook',
+			'PiecePosition' : ['A', 1]
 		},
 		'LeftWhiteRook' : {
 			'Coords' 	:  getPieceCoord('H', 1),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wR.svg',
-			'ClassName' : 'LeftWhiteRook'
+			'ClassName' : 'LeftWhiteRook',
+			'PiecePosition' : ['H', 1]
 		},
 		'RightWhiteNight' : {
 			'Coords' 	:  getPieceCoord('B', 1),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wN.svg',
-			'ClassName' : 'RightWhiteNight'
+			'ClassName' : 'RightWhiteNight',
+			'PiecePosition' : ['B', 1]
 		},
 		'LeftWhiteKnight' : {
 			'Coords' 	:  getPieceCoord('G', 1),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wN.svg',
-			'ClassName' : 'LeftWhiteKnight'
+			'ClassName' : 'LeftWhiteKnight',
+			'PiecePosition' : ['G', 1]
 		},
 		'RightWhiteBiShop' : {
 			'Coords' 	:  getPieceCoord('F', 1),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wB.svg',
-			'ClassName' : 'RightWhiteBiShop'
+			'ClassName' : 'RightWhiteBiShop',
+			'PiecePosition' : ['F', 1]
 		},
 		'LeftWhiteBiShop' : {
 			'Coords' 	:  getPieceCoord('C', 1),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wB.svg',
-			'ClassName' : 'LeftWhiteBiShop'
+			'ClassName' : 'LeftWhiteBiShop',
+			'PiecePosition' : ['C', 1]
 		},
 		'PawnWhite1' : {
 			'Coords' 	:  getPieceCoord('A', 2),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wP.svg',
-			'ClassName' : 'PawnWhite1'
+			'ClassName' : 'PawnWhite1',
+			'PiecePosition' : ['A', 2]
 		},
 		'PawnWhite2' : {
 			'Coords' 	:  getPieceCoord('B', 2),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wP.svg',
-			'ClassName' : 'PawnWhite2'
+			'ClassName' : 'PawnWhite2',
+			'PiecePosition' : ['B', 2]
 		},
 		'PawnWhite3' : {
 			'Coords' 	:  getPieceCoord('C', 2),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wP.svg',
-			'ClassName' : 'PawnWhite3'
+			'ClassName' : 'PawnWhite3',
+			'PiecePosition' : ['C', 2]
 		},
 		'PawnWhite4' : {
 			'Coords' 	:  getPieceCoord('E', 2),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wP.svg',
-			'ClassName' : 'PawnWhite4'
+			'ClassName' : 'PawnWhite4',
+			'PiecePosition' : ['E', 2]
 		},
 		'PawnWhite5' : {
 			'Coords' 	:  getPieceCoord('D', 2),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wP.svg',
-			'ClassName' : 'PawnWhite5'
+			'ClassName' : 'PawnWhite5',
+			'PiecePosition' : ['D', 2]
 		},
 		'PawnWhite6' : {
 			'Coords' 	:  getPieceCoord('F', 2),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wP.svg',
-			'ClassName' : 'PawnWhite6'
+			'ClassName' : 'PawnWhite6',
+			'PiecePosition' : ['F', 2]
 		},
 		'PawnWhite7' : {
 			'Coords' 	:  getPieceCoord('G', 2),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wP.svg',
-			'ClassName' : 'PawnWhite7'
+			'ClassName' : 'PawnWhite7',
+			'PiecePosition' : ['G', 2]
 		},
 		'PawnWhite8' : {
 			'Coords' 	:  getPieceCoord('H', 2),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wP.svg',
-			'ClassName' : 'PawnWhite8'
+			'ClassName' : 'PawnWhite8',
+			'PiecePosition' : ['H', 2]
 		}
 	};
 
 	function setChessPieceDefaultPosition()
 	{
 		$.each(ChessPieces, function( PieceName, PieceProperty ) {
-		  	$('.pieces').append('<div class="'+PieceProperty.ClassName+'"><img src="'+ PieceProperty.image +'"></div>');
+		  	$('.pieces').append('<div class="'+PieceProperty.ClassName+'" ><img src="'+ PieceProperty.image +'" data-current-coords="'+PieceProperty.PiecePosition+'"></div>');
 		  	$('.'+PieceProperty.ClassName).css('transform','translate('+PieceProperty.Coords[0]+', '+PieceProperty.Coords[1]+')');
 		});
 	}
@@ -305,8 +337,9 @@ $(document).ready(function(){
 	setChessPieceDefaultPosition();
 
 
-	$(document).on('click', '.pieces div', function(){
-		coordByPx =  
+	$(document).on('click', '.pieces div img', function(){
+		coordByPx =  $(this).attr('data-current-coords');
+		console.log(coordByPx);
 	});
 
 	// console.log(ChessPieces);
