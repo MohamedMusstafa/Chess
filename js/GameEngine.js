@@ -93,6 +93,15 @@ $(document).ready(function(){
 
 			};
 
+	MovmentType = [
+
+		'xMove',
+		'knightMove',
+		'sideMove',
+		'longMove'
+
+	]
+
 	ChessPieces = {
 
 		'BlackQueen' : {
@@ -235,11 +244,11 @@ $(document).ready(function(){
 			'ClassName' : 'LeftWhiteRook',
 			'PiecePosition' : ['H', 1]
 		},
-		'RightWhiteNight' : {
+		'RightWhiteKnight' : {
 			'Coords' 	:  getPieceCoord('B', 1),
 			'Color'  	: 'White',
 			'image'	 	: 'images/wN.svg',
-			'ClassName' : 'RightWhiteNight',
+			'ClassName' : 'RightWhiteKnight',
 			'PiecePosition' : ['B', 1]
 		},
 		'LeftWhiteKnight' : {
@@ -247,7 +256,8 @@ $(document).ready(function(){
 			'Color'  	: 'White',
 			'image'	 	: 'images/wN.svg',
 			'ClassName' : 'LeftWhiteKnight',
-			'PiecePosition' : ['G', 1]
+			'PiecePosition' : ['G', 1],
+			'MovmentType' : MovmentType[1]
 		},
 		'RightWhiteBiShop' : {
 			'Coords' 	:  getPieceCoord('F', 1),
@@ -324,7 +334,7 @@ $(document).ready(function(){
 	function setChessPieceDefaultPosition()
 	{
 		$.each(ChessPieces, function( PieceName, PieceProperty ) {
-		  	$('.pieces').append('<div class="'+PieceProperty.ClassName+'" ><img src="'+ PieceProperty.image +'" data-current-coords="'+PieceProperty.PiecePosition+'"></div>');
+		  	$('.pieces').append('<div class="'+PieceProperty.ClassName+'"><img src="'+ PieceProperty.image +'" data-current-coords="'+PieceProperty.PiecePosition+'"></div>');
 		  	$('.'+PieceProperty.ClassName).css('transform','translate('+PieceProperty.Coords[0]+', '+PieceProperty.Coords[1]+')');
 		});
 	}
@@ -339,9 +349,10 @@ $(document).ready(function(){
 
 	$(document).on('click', '.pieces div img', function(){
 		coordByPx =  $(this).attr('data-current-coords');
-		console.log(coordByPx);
+		PieceName = $(this).parent().attr('class');
+		console.log(PieceName);
 	});
 
-	// console.log(ChessPieces);
+	console.log(ChessPieces);
 
 });
