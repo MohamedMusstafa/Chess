@@ -93,6 +93,34 @@ $(document).ready(function(){
 
 			};
 
+
+	ArrangeLettersAsNumbers = {
+
+		'A':1,
+		'B':2,
+		'C':3,
+		'D':4,
+		'E':5,
+		'F':6,
+		'G':7,
+		'H':8
+
+	}
+
+	ArrangeNumbersAsLetters = {
+
+		1:'A',
+		2:'B',
+		3:'C',
+		4:'D',
+		5:'E',
+		6:'F',
+		7:'G',
+		8:'H'
+
+	}
+		
+
 	MovmentType = [
 
 		'xMove',
@@ -133,11 +161,11 @@ $(document).ready(function(){
 			'PiecePosition' : ['H', 8]
 		},
 		'RightBlackNight' : {
-			'Coords' 	:  getPieceCoord('B', 8),
+			'Coords' 	:  getPieceCoord('E', 5),
 			'Color'  	: 'Black',
 			'image'	 	: 'images/bN.svg',
 			'ClassName' : 'RightBlackNight',
-			'PiecePosition' : ['B', 8]
+			'PiecePosition' : ['E', 5]
 		},
 		'LeftBlackKnight' : {
 			'Coords' 	:  getPieceCoord('G', 8),
@@ -188,20 +216,20 @@ $(document).ready(function(){
 			'ClassName' : 'PawnBlack4',
 			'PiecePosition' : ['E', 7]
 		},
-		'PawnBlack5' : {
-			'Coords' 	:  getPieceCoord('D', 7),
-			'Color'  	: 'Black',
-			'image'	 	: 'images/bP.svg',
-			'ClassName' : 'PawnBlack5',
-			'PiecePosition' : ['D', 7]
-		},
-		'PawnBlack6' : {
-			'Coords' 	:  getPieceCoord('F', 7),
-			'Color'  	: 'Black',
-			'image'	 	: 'images/bP.svg',
-			'ClassName' : 'PawnBlack6',
-			'PiecePosition' : ['F', 7]
-		},
+		// 'PawnBlack5' : {
+		// 	'Coords' 	:  getPieceCoord('D', 7),
+		// 	'Color'  	: 'Black',
+		// 	'image'	 	: 'images/bP.svg',
+		// 	'ClassName' : 'PawnBlack5',
+		// 	'PiecePosition' : ['D', 7]
+		// },
+		// 'PawnBlack6' : {
+		// 	'Coords' 	:  getPieceCoord('F', 7),
+		// 	'Color'  	: 'Black',
+		// 	'image'	 	: 'images/bP.svg',
+		// 	'ClassName' : 'PawnBlack6',
+		// 	'PiecePosition' : ['F', 7]
+		// },
 		'PawnBlack7' : {
 			'Coords' 	:  getPieceCoord('G', 7),
 			'Color'  	: 'Black',
@@ -344,15 +372,107 @@ $(document).ready(function(){
 		return Coords[CoordLetter][CoordNumber];
 	}
 
+
+	function ConvertCoordLetterToNumber(CoordsLetter)
+	{
+		return ArrangeLettersAsNumbers[CoordsLetter];
+	}
+
+	function ConvertCoordNumberToLetter(CoordsNumber)
+	{
+		return ArrangeNumbersAsLetters[CoordsNumber];
+	}
+
 	setChessPieceDefaultPosition();
 
 
+	function getPieceAllowedCoords(PieceName, CurrentCoordsLetter, CurrentCoordsNumber)
+	{
+
+		switch(PieceName) {
+
+		  	case "RightBlackNight":
+
+		  		KnightLongTopRightNumber = parseInt(CurrentCoordsNumber) - 2;
+				KnightLongTopRightLetter = ConvertCoordNumberToLetter(ConvertCoordLetterToNumber(CurrentCoordsLetter) - 1);
+		  		
+		  		KnightLongTopLeftNumber = parseInt(CurrentCoordsNumber) - 2;
+				KnightLongTopLeftLetter = ConvertCoordNumberToLetter(ConvertCoordLetterToNumber(CurrentCoordsLetter)+1);
+
+				KnightLongBottomRightNumber = parseInt(CurrentCoordsNumber) + 2;
+				KnightLongBottomRightLetter = ConvertCoordNumberToLetter(ConvertCoordLetterToNumber(CurrentCoordsLetter) - 1);
+
+				KnightLongBottomLeftNumber = parseInt(CurrentCoordsNumber) + 2;
+				KnightLongBottomLeftLetter = ConvertCoordNumberToLetter(ConvertCoordLetterToNumber(CurrentCoordsLetter) + 1);
+
+
+				MovmentAllowed = {
+
+					1:[KnightLongTopRightLetter, KnightLongTopRightNumber],
+					2:[KnightLongTopLeftLetter, KnightLongTopLeftNumber],
+					3:[KnightLongBottomRightLetter, KnightLongBottomRightNumber],
+					4:[KnightLongBottomLeftLetter, KnightLongBottomLeftNumber]
+
+				}
+
+				return MovmentAllowed;
+
+		    break;
+
+		    case "PawnWhite7":
+		  	
+		  		console.log('Karima');
+
+		  	break;	
+		}
+
+		
+
+	}
+
+	function changePxForLeft(CoordsByPx){
+
+		coord = CoordsByPx.match(/\d+/);
+		CoordAfterChange =parseInt(coord[0])+51;
+		
+		return CoordAfterChange+'px';
+
+	}
+
+	console.log(changePxForLeft('503px'));
+
+	function changePxForRight(CoordsByPx){
+
+		coord = CoordsByPx.match(/\d+/);
+		CoordAfterChange =parseInt(coord[0])-21;
+		
+		return '-'+CoordAfterChange+'px';
+
+	}
+
+
+	function generateCoordsAllowedPointer(AllowedCoordsForSelectedPiece)
+	{
+		$.each(AllowedCoordsForSelectedPiece, function( Key, Coords ) {
+			$('.pointers').append('<div class="'+Coords[0]+'-'+Coords[1]+'"></div>');
+
+			PxByCoords = getPieceCoord(Coords[0], Coords[1]);
+
+			$("."+Coords[0]+"-"+Coords[1]).css('transform','translate('+changePxForLeft(PxByCoords[0])+', '+changePxForRight(PxByCoords[1])+')');
+		});
+	}
+
 	$(document).on('click', '.pieces div img', function(){
-		coordByPx =  $(this).attr('data-current-coords');
+		CurrentCoords =  $(this).attr('data-current-coords');
 		PieceName = $(this).parent().attr('class');
-		console.log(PieceName);
+
+		var AllowedCoordsForSelectedPiece =  getPieceAllowedCoords(PieceName, CurrentCoords[0], CurrentCoords[2]);
+		
+		generateCoordsAllowedPointer(AllowedCoordsForSelectedPiece);
+
+		console.log(AllowedCoordsForSelectedPiece);
+
 	});
 
-	console.log(ChessPieces);
 
 });

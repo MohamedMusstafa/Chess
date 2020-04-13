@@ -13,12 +13,6 @@ body {
   user-select: none;
 }
 
-.pieces div {
-    width: 120px;
-    height: 62px;
-    position: absolute;
-    cursor: pointer;
-}
 
 .board-container {
     height: 100%;
@@ -87,6 +81,23 @@ body {
     text-align: center;
 }
 
+.pointers div {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    /*bottom: 54.8%;
+    left: 52.5%;*/
+    border-radius: 25px;
+    background: radial-gradient(rgba(20, 30, 85, 0.5) 84%, #203085 0, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 0);
+    cursor: pointer;
+}
+
+.pieces div {
+    width: 120px;
+    height: 62px;
+    position: absolute;
+    cursor: pointer;
+}
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
